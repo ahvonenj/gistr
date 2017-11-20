@@ -1,0 +1,23 @@
+{
+  "name": "fget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahvonenj/fget.git"
+  },
+  "author": "Jonah Ahvonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahvonenj/fget/issues"
+  },
+  "homepage": "https://github.com/ahvonenj/fget#readme",
+  "preferGlobal": true,
+  "bin": {
+    "asd": "./bin/test.js"
+  }
+}
