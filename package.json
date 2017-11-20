@@ -18,7 +18,8 @@
   "homepage": "https://github.com/ahvonenj/gistr#readme",
   "preferGlobal": true,
   "bin": {
-    "gistr": "./bin/main.js"
+    "gistr": "./bin/main.js",
+    "gstr": "./bin/main.js"
   },
   "dependencies": {
     "settings": "^0.1.1"

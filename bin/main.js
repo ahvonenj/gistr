@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var fget = require('../lib/index.js');
+var gistr = require('../lib/index.js');
 var Settings = require('settings');
 
 var args = process.argv.splice(process.execArgv.length + 2);
@@ -9,7 +9,7 @@ var config = new Settings(require('../lib/config.js'));
 // Default command call without arguments
 if(typeof args[0] === 'undefined' || args[0] === null)
 {
-	fget.main();
+	gistr.main();
 }
 else
 {
@@ -18,10 +18,10 @@ else
 	switch(subcommand)
 	{
 		case 'execdir':
-			fget.execdir();
+			gistr.execdir();
 			break;
 		case 'moduledir':
-			fget.moduledir();
+			gistr.moduledir();
 			break;
 		case 'settings':
 			console.log(config);
