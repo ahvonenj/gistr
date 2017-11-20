@@ -18,6 +18,6 @@
   "homepage": "https://github.com/ahvonenj/fget#readme",
   "preferGlobal": true,
   "bin": {
-    "asd": "./bin/test.js"
+    "fget": "./bin/main.js"
   }
 }
