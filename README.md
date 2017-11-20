@@ -1,6 +1,6 @@
 # gistr
 
-<<NOT YET READY>>
+**NOT YET READY**
 
 Gistr. View, save and pull single files from Github's Gists.
 
