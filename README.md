@@ -16,4 +16,4 @@ As I could not figure out anything better to use and I don't want to host files 
 
 ## Usage
 
-`npm install gistr -g`
+`npm install -g gistr`
