@@ -19,5 +19,8 @@
   "preferGlobal": true,
   "bin": {
     "fget": "./bin/main.js"
+  },
+  "dependencies": {
+    "settings": "^0.1.1"
   }
 }
