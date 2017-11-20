@@ -1,8 +1,8 @@
 # gistr
 
-Gistr.. View, save and pull single files from Github's Gists.
+Gistr. View, save and pull single files from Github's Gists.
 
-[![Build Status](https://travis-ci.com/ahvonenj/fget.svg?token=CTLNy9ndTqFfFx23p9q1&branch=master)](https://travis-ci.com/ahvonenj/fget)
+[![Build Status](https://travis-ci.com/ahvonenj/gistr.svg?token=CTLNy9ndTqFfFx23p9q1&branch=master)](https://travis-ci.com/ahvonenj/gistr)
 
 ## Why?
 
