@@ -1,5 +1,5 @@
 {
-  "name": "fget",
+  "name": "gistr",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahvonenj/fget.git"
+    "url": "git+https://github.com/ahvonenj/gistr.git"
   },
   "author": "Jonah Ahvonen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ahvonenj/fget/issues"
+    "url": "https://github.com/ahvonenj/gistr/issues"
   },
-  "homepage": "https://github.com/ahvonenj/fget#readme",
+  "homepage": "https://github.com/ahvonenj/gistr#readme",
   "preferGlobal": true,
   "bin": {
-    "fget": "./bin/main.js"
+    "gistr": "./bin/main.js"
   },
   "dependencies": {
     "settings": "^0.1.1"
