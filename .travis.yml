@@ -5,3 +5,9 @@ node_js:
   - "8"
 before_install:
   - npm install -g npm@latest
+before_script:
+  - npm install -g gulp-cli
+  - npm install -g gulp
+  - npm install -g gulp-jasmine
+  - npm install -g jasmine-reporters
+script: gulp

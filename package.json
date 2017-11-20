@@ -22,5 +22,10 @@
   },
   "dependencies": {
     "settings": "^0.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.4.2",
+    "jasmine-reporters": "^2.2.1"
   }
 }
