@@ -19,3 +19,7 @@ As I could not figure out anything better to use and I don't want to host files 
 ## Usage
 
 `npm install -g gistr`
+
+## NPM
+
+https://www.npmjs.com/package/gistr
