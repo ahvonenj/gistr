@@ -38,14 +38,4 @@ else
 		console.log('No such command `' + subcommand + '`');
 		process.exit(0);
 	}
-
-	/*
-		gistr.creategist(function(data, response)
-		{
-			fs.writeFile(process.cwd() + '/resp.json', JSON.stringify(data), function(err)
-			{
-				if(err) throw err;
-			});
-		});
-	*/
 }
