@@ -22,6 +22,8 @@
     "gstr": "./bin/main.js"
   },
   "dependencies": {
+    "columnify": "^1.5.4",
+    "minimist": "^1.2.0",
     "settings": "^0.1.1"
   },
   "devDependencies": {

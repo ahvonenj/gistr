@@ -2,18 +2,27 @@
 
 var gistr = require('../lib/index.js');
 var Settings = require('settings');
+var argv = require('minimist')(process.argv.slice(2));
 
-var args = process.argv.splice(process.execArgv.length + 2);
+
 var config = new Settings(require('../lib/config.js'));
 
+console.log(argv)
+
 // Default command call without arguments
-if(typeof args[0] === 'undefined' || args[0] === null)
+if(argv._.length === 0)
 {
 	gistr.main();
 }
 else
 {
-	var subcommand = args[0];
+	if(argv.v)
+	{
+		gistr.version();
+		process.exit(0);
+	}
+
+	var subcommand = argv._[0];
 
 	switch(subcommand)
 	{
