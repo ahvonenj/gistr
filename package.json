@@ -19,7 +19,8 @@
   "preferGlobal": true,
   "bin": {
     "gistr": "./bin/main.js",
-    "gstr": "./bin/main.js"
+    "gstr": "./bin/main.js",
+    "gist": "./bin/main.js"
   },
   "dependencies": {
     "columnify": "^1.5.4",
