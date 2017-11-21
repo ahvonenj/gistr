@@ -1,11 +1,8 @@
 #!/usr/bin/env node
 
 var gistr = require('../lib/index.js');
-var Settings = require('settings');
 var argv = require('minimist')(process.argv.slice(2));
 var fs = require('fs');
-
-var config = new Settings(require('../lib/config.js'));
 
 // Print out gistr version, if -v or --version argument exists
 if(argv.v || argv.version)
