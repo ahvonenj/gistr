@@ -16,15 +16,14 @@ Simply put - the goal, when using this tool, is that you can start building your
 
 As I could not figure out anything better to use and I don't want to host files on a server of my own - I decided to use Github's Gists as a starting storage for files.
 
-## Usage
-
-### Install
+## Install
 
 `npm install -g gistr`
 
-### Commands
+## Usage
 
-Create a gist:
+### Create a gist
+
 ```
 (gistr|gstr|gist) (add|create) <file1> <file2> ... [<-b|--bundle (1 gist, n files)>] [<-d=|--desc=|--description= (Gist description)>] [<-v|--verbose (Verbose logging)>]
 ```
