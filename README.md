@@ -29,6 +29,8 @@ Create a gist:
 (gistr|gstr|gist) (add|create) <file1> <file2> ... [<-b|--bundle (1 gist, n files)>] [<-d=|--desc=|--description= (Gist description)>] [<-v|--verbose (Verbose logging)>]
 ```
 
+Example: `gist add myfile1.txt myfile2.txt --bundle -d="Gist description" -v`
+
 ## NPM
 
 https://www.npmjs.com/package/gistr
