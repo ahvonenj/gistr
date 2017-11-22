@@ -80,6 +80,16 @@ Example:
 `gist find gulpfile`  
 `gist find "math library"`
 
+## Authentication
+
+Optionally, or if 60 anonymous gists per hour is not enough for you, you can use an access-token based authentication with gistr.
+
+Simply generate a new access-token for your github account by following the instructions here: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+
+And use command `gist add-token --token="yourtokenhere"` to let gistr use it for gisting.
+
+The only permission or scope you need to grant for the access-token is the `gist` one, obviously.
+
 ## NPM
 
 https://www.npmjs.com/package/gistr
