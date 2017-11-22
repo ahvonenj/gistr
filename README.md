@@ -83,3 +83,13 @@ Example:
 ## NPM
 
 https://www.npmjs.com/package/gistr
+
+## Screenshots
+
+### Gisting a file
+
+![](https://i.imgur.com/cYEm3PT.png)
+
+### Listing and searching for gists
+
+![](https://i.imgur.com/cjLARbF.png)
