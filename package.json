@@ -26,7 +26,8 @@
     "columnify": "^1.5.4",
     "minimist": "^1.2.0",
     "node-async-loop": "^1.2.2",
-    "node-rest-client": "^3.1.0"
+    "node-rest-client": "^3.1.0",
+    "node-storage": "0.0.7"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
