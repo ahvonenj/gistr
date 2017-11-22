@@ -1,4 +1,4 @@
-describe("Core", function() 
+describe("gistr core", function() 
 {
 	var gistr = require('../lib/index.js');
 
@@ -29,5 +29,17 @@ describe("gistr basic commands", function()
 	{
 		gistr.version();
 		expect(console.log).not.toBeNull('');
+	});
+});
+
+describe("gistr gist commands", function()
+{
+	var gistr = require('../lib/index.js');
+	console.log = jasmine.createSpy("log");
+
+	it("should output message when there are no gists stored", function()
+	{
+		gistr.list();
+		expect(console.log).toHaveBeenCalledWith('No gists stored');
 	});
 });
