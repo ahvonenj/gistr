@@ -22,13 +22,63 @@ As I could not figure out anything better to use and I don't want to host files 
 
 ## Usage
 
+### Aliases
+
+```
+General
+
+gistr = gstr = gist
+
+gist -h = gist --help
+gist -v = gist --version
+
+gist add = gist create = gist creategist
+
+gist list = gist gists
+gist find = gist search
+gist show = gist details
+gist pull = gist get
+
+
+When creating gists:
+
+Bundle multiple files into a single gist
+
+-b = --bundle
+
+Gist description
+
+-d="" = --desc="" = --description=""
+
+Verbose logging
+
+-v = --verbose
+```
+
 ### Create a gist
 
-```
-(gistr|gstr|gist) (add|create) <file1> <file2> ... [<-b|--bundle (1 gist, n files)>] [<-d=|--desc=|--description= (Gist description)>] [<-v|--verbose (Verbose logging)>]
-```
+Uploads one or more files as one or more gists to Github and saved a reference to those files into a local database-file.
 
-Example: `gist add myfile1.txt myfile2.txt --bundle -d="Gist description" -v`
+`gist add <file1> <file2> ... [<-b (1 gist, n files)>] [<-d="" (Gist description)>] [<-v (Verbose logging)>]`
+
+Example:  
+`gist add myfile1.txt myfile2.txt --bundle -d="Gist description" -v`
+
+### List gists
+
+Lists references to gisted files, located in a local database-file.
+
+`gist list`
+
+### Find gists by description or filename
+
+Find references to gisted files, located in a local database-file.
+
+`gist find <search>`
+
+Example:  
+`gist find gulpfile`  
+`gist find "math library"`
 
 ## NPM
 
