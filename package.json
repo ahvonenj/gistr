@@ -18,9 +18,9 @@
   "homepage": "https://github.com/ahvonenj/gistr#readme",
   "preferGlobal": true,
   "bin": {
-    "gistr": "./bin/main.js",
-    "gstr": "./bin/main.js",
-    "gist": "./bin/main.js"
+    "gistr": "./bin/main-min.js",
+    "gstr": "./bin/main-min.js",
+    "gist": "./bin/main-min.js"
   },
   "dependencies": {
     "columnify": "^1.5.4",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jasmine": "^2.4.2",
+    "gulp-minify": "^2.1.0",
     "jasmine-reporters": "^2.2.1"
   }
 }
