@@ -5,12 +5,12 @@ var argv = require('minimist')(process.argv.slice(2));
 var fs = require('fs');
 
 // Print out gistr version, if -v or --version argument exists
-if(argv.v || argv.version)
+if((argv.v || argv.version) && argv._.length === 0)
 {
 	gistr.version();
 	process.exit(0);
 }
-else if(argv.h || argv.help) // Print out help if -h or --help argument exists
+else if((argv.h || argv.help) && argv._.length === 0) // Print out help if -h or --help argument exists
 {
 	gistr.help();
 	process.exit(0);
