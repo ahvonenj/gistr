@@ -1,6 +1,6 @@
 describe("gistr core", function() 
 {
-	var gistr = require('../lib/index.js');
+	var gistr = require('../lib/min/index-min.js');
 
 	it("should find gistr", function()
 	{
@@ -10,7 +10,7 @@ describe("gistr core", function()
 
 describe("gistr basic commands", function() 
 {
-	var gistr = require('../lib/index.js');
+	var gistr = require('../lib/min/index-min.js');
 	console.log = jasmine.createSpy("log");
 
 	it("should output usage information", function()
@@ -34,7 +34,7 @@ describe("gistr basic commands", function()
 
 describe("gistr gist commands", function()
 {
-	var gistr = require('../lib/index.js');
+	var gistr = require('../lib/min/index-min.js');
 	console.log = jasmine.createSpy("log");
 
 	it("should output message when there are no gists stored", function()

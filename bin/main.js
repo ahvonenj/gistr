@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var gistr = require('../lib/index-min.js');
+var gistr = require('../lib/min/index-min.js');
 var argv = require('minimist')(process.argv.slice(2));
 var fs = require('fs');
 

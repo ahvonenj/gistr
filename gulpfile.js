@@ -16,18 +16,24 @@ gulp.task('build', function()
 	gulp.src('lib/*.js')
 	.pipe(minify({
 		ext:{
+			src: '.js',
 			min:'-min.js'
 		},
-		ignoreFiles: ['*-min.js']
+		ignoreFiles: ['*-min.js'],
+		exclude: ['min'],
+		noSource: true
 	}))
-	.pipe(gulp.dest('lib/'))
+	.pipe(gulp.dest('lib/min/'))
 
 	gulp.src('bin/*.js')
 	.pipe(minify({
 		ext:{
+			src: '.js',
 			min:'-min.js'
 		},
-		ignoreFiles: ['*-min.js']
+		ignoreFiles: ['*-min.js'],
+		exclude: ['min'],
+		noSource: true
 	}))
 	.pipe(gulp.dest('bin/'))
 });
