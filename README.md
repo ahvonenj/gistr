@@ -22,7 +22,54 @@ As I could not figure out anything better to use and I don't want to host files 
 
 ## Usage
 
-### Aliases
+### Create a gist
+
+`gist add <file1> <file2> ... [<-b (1 gist, n files)>] [<-d="" (Gist description)>] [<-v (Verbose logging)>]`
+
+Uploads one or more files as one or more gists to Github and saved a reference to those files into a local database-file.
+
+Example:  
+`gist add myfile1.txt myfile2.txt --bundle -d="Gist description" -v`
+
+### List gists
+
+`gist list`
+
+Lists references to gisted files, located in a local database-file.
+
+### Find gists by description or filename
+
+`gist find <search>`
+
+Find references to gisted files, located in a local database-file.
+
+Example:  
+`gist find gulpfile`  
+`gist find "math library"`
+
+### Show gist details
+
+`gist show <Gist #>`
+
+Outputs details of a saved gist reference, located in a local database-file.
+
+`Gist #`'s can be found by calling `gist list`.
+
+Example:  
+`gist show 5`  
+`gist show 4 --tofile` (Creates a file named `gist-<gistID>.txt` to the cwd)
+
+### Pull gist from Github's Gists
+
+`gist pull <Gist #>`
+
+Pulls a gist and all associated files to that gist from Github's Gists.
+
+Example:  
+`gist pull 3` (Pulls the gist and writes the files into cwd)  
+`gist pull 2 -d="somefolder"` (Pulls the gist and writes the files into `cwd/somefolder/`)
+
+## Aliases
 
 ```
 General
@@ -73,55 +120,6 @@ To output pulled gists to some other directory than the current working director
 -d="" = --dir="" = --directory=""
 
 ```
-
-### Create a gist
-
-`gist add <file1> <file2> ... [<-b (1 gist, n files)>] [<-d="" (Gist description)>] [<-v (Verbose logging)>]`
-
-Uploads one or more files as one or more gists to Github and saved a reference to those files into a local database-file.
-
-Example:  
-`gist add myfile1.txt myfile2.txt --bundle -d="Gist description" -v`
-
-### List gists
-
-`gist list`
-
-Lists references to gisted files, located in a local database-file.
-
-### Find gists by description or filename
-
-`gist find <search>`
-
-Find references to gisted files, located in a local database-file.
-
-Example:  
-`gist find gulpfile`  
-`gist find "math library"`
-
-### Show gist details
-
-`gist show <Gist #>`
-
-Outputs details of a saved gist reference, located in a local database-file.
-
-`Gist #`'s can be found by calling `gist list`.
-
-Example:  
-`gist show 5`  
-`gist show 4 --tofile` (Creates a file named `gist-<gistID>.txt` to the cwd)
-
-### Pull gist from Github's Gists
-
-`gist pull <Gist #>`
-
-Pulls a gist and all associated files to that gist from Github's Gists.
-
-Example:  
-`gist pull 3` (Pulls the gist and writes the files into cwd)  
-`gist pull 2 -d="somefolder"` (Pulls the gist and writes the files into `cwd/somefolder/`)
-
-
 
 ## Authentication
 
