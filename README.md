@@ -22,7 +22,7 @@ As I could not figure out anything better to use and I don't want to host files 
 
 ## Usage
 
-### Create a gist
+### Create a gist from file(s)
 
 `gist add <file1> <file2> ... [<-b (1 gist, n files)>] [<-d="" (Gist description)>] [<-v (Verbose logging)>]`
 
@@ -30,6 +30,16 @@ Uploads one or more files as one or more gists to Github and saved a reference t
 
 Example:  
 `gist add myfile1.txt myfile2.txt --bundle -d="Gist description" -v`
+
+### Create a gist from folder
+
+`gist add-dir <directory> [<-d="" (Gist description)>] [<-v (Verbose logging)>]`
+
+Uploads all files in a folder as a single gist to Github and saves a reference to that gist into a local database-file.
+
+Example:  
+`gist add-dir "path/to/folder"`  
+`gist add-dir folder -d="Folder full of files"`
 
 ### List gists
 
@@ -76,10 +86,11 @@ General
 
 gistr = gstr = gist
 
-gist -h = gist --help
-gist -v = gist --version
+gist -h = gist --help = gist help
+gist -v = gist --version = gist version
 
 gist add = gist create = gist creategist
+gist add-dir = gist add-folder = gist add-directory
 
 gist list = gist gists
 gist find = gist search
