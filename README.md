@@ -10,7 +10,7 @@ Gistr - View, save and pull files from Github's Gists.
 
 gistr is designed to be a small and a simple tool to quickly push and pull files from Github's Gists. You may have that useful `index.css` or something else saved, which you always include for your projects, but it is a hassle to find and fetch all those various files, as they have probably been scattered among various different projects and gists.
 
-Simply put - the goal, when using this tool, is that you can start building your own local "database" of different kinds of files, which you can then easily fetch for your other projects. This local database can then be uploaded into cloud behind a simple key of your choise and downloaded at will for other machines.
+Simply put - the goal, when using this tool, is that you can start building your own local "database" of different kinds of files, which you can then easily fetch for your other projects. This local database itself, can then be stored as a gist or a file and restored to other machines at will.
 
 ## Gists?
 
