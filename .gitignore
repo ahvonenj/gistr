@@ -1,6 +1,7 @@
 junitresults.xml
 resp.json
 test/gist-*.txt
+*.gs
 
 # Logs
 logs
