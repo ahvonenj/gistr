@@ -31,7 +31,8 @@
     "mkdirp": "^0.5.1",
     "node-async-loop": "^1.2.2",
     "node-rest-client": "^3.1.0",
-    "node-storage": "0.0.7"
+    "node-storage": "0.0.7",
+    "yesno": "0.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
