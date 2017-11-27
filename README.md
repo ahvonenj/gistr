@@ -79,13 +79,17 @@ Example:
 
 ### Export local database
 
-`gist export-db [<-f="path/to/file.ext">] <[-v (Verbose logging)]>`
+`gist export-db [<-f (Export to file)>] <[-v (Verbose logging)]>`
 
 Exports the local database to a file or as a gist if -f or --tofile -parameter is not given.
 
 To export the local database as a gist, `access-token` has to be set, as the database file could contain your Github access-token. Having the access-token being set as a requirement guarantees that the gist is made under your Github profile as a secret gist.
 
 File-export does not require the access-token to be set, but be careful as the exported file might still contain your access-token if it is set.
+
+Example:  
+`gist export-db` (Locates the database-file and gists it)  
+`gist export-db -f`
 
 ### Import local database
 
@@ -97,6 +101,11 @@ Import local database from a file or from an exported gist.
 If importing from a file, --file parameter is expected and needs to point to an exported .gs-file.
 
 If importing from a gist, --id parameter is expected and needs to be an id of the gist that has the storage file.
+
+Example:  
+`gist import-db -f` (Assumes a file named `gistr-db-export.gs` exists in the cwd)  
+`gist import-db --id="somegistid"`  
+`gist import-db -f="path/to/some/db.file"`
 
 ### Purge / delete local database
 
