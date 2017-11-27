@@ -69,7 +69,7 @@ Example:
 
 ### Pull gist from Github's Gists
 
-`gist pull <Gist #>  [-v (Verbose logging)]`
+`gist pull <Gist #>  <[-v (Verbose logging)]>`
 
 Pulls a gist and all associated files to that gist from Github's Gists.
 
@@ -79,7 +79,7 @@ Example:
 
 ### Export local database
 
-`gist export-db [<-f="path/to/file.ext">] [-v (Verbose logging)]`
+`gist export-db [<-f="path/to/file.ext">] <[-v (Verbose logging)]>`
 
 Exports the local database to a file or as a gist if -f or --tofile -parameter is not given.
 
@@ -89,8 +89,8 @@ File-export does not require the access-token to be set, but be careful as the e
 
 ### Import local database
 
-`gist import-db <--file="path/to/db-export.gs"> [-v (Verbose logging)]`  
-`gist import-db <--id="yourdbexportgistid"> [-v (Verbose logging)]`
+`gist import-db <--file="path/to/db-export.gs"> <[-v (Verbose logging)]>`  
+`gist import-db <--id="yourdbexportgistid"> <[-v (Verbose logging)]>`
 
 Import local database from a file or from an exported gist. 
 
