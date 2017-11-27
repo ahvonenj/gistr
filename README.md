@@ -98,6 +98,12 @@ If importing from a file, --file parameter is expected and needs to point to an 
 
 If importing from a gist, --id parameter is expected and needs to be an id of the gist that has the storage file.
 
+### Purge / delete local database
+
+`gist purge-db`
+
+Deletes the local database file and performs a runtime unlink of the database-file. Basically factory resets the program.
+
 ## Aliases
 
 ```
@@ -121,6 +127,8 @@ gist remove-token = gist delete-token = gist unset-token
 gist show-token = gist display-token = gist view-token
 
 gist import-db = gist get-db
+
+gist purge-db = gist remove-db = gist delete-db
 
 
 When creating gists:
