@@ -1,7 +1,5 @@
 # gistr
 
-**NOT YET READY**
-
 Gistr - View, save and pull files from Github's Gists.
 
 [![Build Status](https://travis-ci.com/ahvonenj/gistr.svg?token=CTLNy9ndTqFfFx23p9q1&branch=master)](https://travis-ci.com/ahvonenj/gistr)
@@ -79,6 +77,27 @@ Example:
 `gist pull 3` (Pulls the gist and writes the files into cwd)  
 `gist pull 2 -d="somefolder"` (Pulls the gist and writes the files into `cwd/somefolder/`)
 
+### Export local database
+
+`gist export-db [<-f="path/to/file.ext">]`
+
+Exports the local database to a file or as a gist if -f or --tofile -parameter is not given.
+
+To export the local database as a gist, `access-token` has to be set, as the database file could contain your Github access-token. Having the access-token being set as a requirement guarantees that the gist is made under your Github profile as a secret gist.
+
+File-export does not require the access-token to be set, but be careful as the exported file might still contain your access-token if it is set.
+
+### Import local database
+
+`gist import-db <--file="path/to/db-export.gs">`  
+`gist import-db <--id="yourdbexportgistid">`
+
+Import local database from a file or from an exported gist. 
+
+If importing from a file, --file parameter is expected and needs to point to an exported .gs-file.
+
+If importing from a gist, --id parameter is expected and needs to be an id of the gist that has the storage file.
+
 ## Aliases
 
 ```
@@ -97,9 +116,11 @@ gist find = gist search
 gist show = gist details
 gist pull = gist get
 
-gist add-token = gist save-token
-gist remove-token = gist delete-token
-gist show-token = gist display-token
+gist add-token = gist save-token = gist set-token
+gist remove-token = gist delete-token = gist unset-token
+gist show-token = gist display-token = gist view-token
+
+gist import-db = gist get-db
 
 
 When creating gists:
@@ -129,6 +150,16 @@ When pulling gists:
 To output pulled gists to some other directory than the current working directory
 
 -d="" = --dir="" = --directory=""
+
+
+When exporting database:
+
+-f="" = --tofile=""
+
+
+When importing database:
+
+-f="" = --file=""
 
 ```
 
